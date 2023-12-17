@@ -1,0 +1,81 @@
+/*some default things to start working with*/
+*, *::after, *::before {
+    box-sizing: border-box;
+    color: #fff;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a {
+    color: #f9faf8;
+    font-size: 24px;
+    text-decoration: none;
+}
+/*ends here*/
+
+/* nav content here */
+.header_main {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background: #1f2937;
+    width: 100vw;
+}
+
+.header_nav {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head ul, .head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 10px;
+}
+
+.container {
+    width: 70%;
+}
+
+.logo {
+    width: 100px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+/* header sub main contant here */
+.header_sub_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_sub_content h1 {
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic;
+    color: #f9faf8;
+}
+
+.main_sub_content p {
+    color: #e5e7eb;
+    font-size: 25px;
+}
+
+.header_sub_main img {
+    width: 600px;
+}
+
+.main_sub_content button {
+    background-color: #3882f6;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+}
+/* Block section */
+
