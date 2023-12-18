@@ -1,8 +1,21 @@
 /*some default things to start working with*/
+@font-face {
+    font-family: 'Main font';
+    src: url("./fonts/radiant-kingdom.regular.otf");
+}
 
 *, *::after, *::before {
     box-sizing: border-box;
     color: #fff;
+}
+
+button {
+    font-family: inherit;
+    font-size: 25px;
+}
+
+h4 {
+    margin: 0;
 }
 
 ul, ol {
@@ -12,12 +25,21 @@ ul, ol {
 }
 a {
     color: #f9faf8;
-    font-size: 24px;
+    font-size: 34px;
     text-decoration: none;
 }
+
+a:hover {
+    text-decoration: underline #fff;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Main font',Arial,sans-serif;
+}
+p {
+    font-size: 30px;
 }
 /*ends here*/
 
@@ -26,7 +48,7 @@ body {
 .header_main {
     display: flex;
     justify-content: center;
-    height: 650px;
+    height: 700px;
     background: #1f2937;
 }
 
@@ -47,6 +69,7 @@ body {
     width: 100px;
     height: 70px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 /* header sub main content here */
@@ -59,7 +82,7 @@ body {
 }
 
 .main_sub_content h1 {
-    font-size: 48px;
+    font-size: 70px;
     font-weight: 900;
     font-style: italic;
     color: #f9faf8;
@@ -67,7 +90,7 @@ body {
 
 .main_sub_content p {
     color: #e5e7eb;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .header_sub_main img {
@@ -75,11 +98,13 @@ body {
 }
 
 .main_sub_content button {
+    width: 120px;
+    height: 50px;
     background-color: #3882f6;
-    padding: 10px 30px;
     border: none;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 /* Block middle section */
@@ -101,9 +126,10 @@ body {
 
 .middle_header2 {
     color: #2a3441;
-    font-size: 36px;
+    font-size: 50px;
     font-weight: 900;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .card img {
@@ -134,10 +160,12 @@ body {
 
 .quote_container blockquote, .quote_container cite, .quote_container span {
     color: #2a3441;
+    font-size: 30px;
+
 }
 
 .quote_container blockquote {
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .quote_container {
@@ -157,6 +185,12 @@ body {
 }
 
 .action_text h3 {
+    margin: 0;
+    font-size: 35px;
+    font-style: italic;
+}
+
+.action_text p {
     margin: 0;
 }
 
@@ -192,15 +226,56 @@ body {
 
 .action_button {
     width: 120px;
-    height: 30px;
+    height: 50px;
     background-color: #3882f6;
     align-items: center;
     border: 2px solid #fff;
     border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 15px;
 }
 
 .action_text {
     display: flex;
     flex-direction: column;
 }
+
+/* footer section */
+
+footer {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    background-color: #1f2937;
+}
+
+.all_rights img {
+    width: 48px;
+    height: 48px;
+}
+
+.all_rights {
+    display: flex;
+    align-items: center;
+}
+
+.footer_div {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.all_rights h4 {
+    font-size: 35px;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+
 
