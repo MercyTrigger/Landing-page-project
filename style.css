@@ -136,6 +136,10 @@ body {
     color: #2a3441;
 }
 
+.quote_container blockquote {
+    font-size: 25px;
+}
+
 .quote_container {
     display: flex;
     height: 400px;
@@ -143,8 +147,8 @@ body {
     align-items: center;
     justify-content: center;
     line-height: 30px;
-
 }
+
 .main_quote {
     display: flex;
     width: 1200px;
@@ -152,6 +156,51 @@ body {
     align-items: flex-end;
 }
 
+.action_text h3 {
+    margin: 0;
+}
+
 .main_quote span {
     font-weight: bold;
 }
+
+/* call to action section */
+
+.action_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+/* this is like <br> but won't affect my <p>, <br> affects it, this is why I chose whis way */
+.content1::after {
+    content: "\a";
+    white-space: pre;
+}
+/* /////////////////// */
+
+.action {
+    display: flex;
+    height: 150px;
+    width: 1200px;
+    background-color: #3882f6;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.action_button {
+    width: 120px;
+    height: 30px;
+    background-color: #3882f6;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.action_text {
+    display: flex;
+    flex-direction: column;
+}
+
